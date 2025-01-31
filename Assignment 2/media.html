@@ -1,0 +1,88 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Media Page</title>
+    <style>
+         @font-face {
+        font-family: 'DMSans';
+        src: url(fonts/DM_Sans/DM_Sans/static/DMSans-Medium.ttf);
+    }
+        body {
+            font-family: 'DMSans', sans-serif;
+            margin: 0;
+            padding: 0;
+            background-color: gainsboro;
+        }
+        nav ul {
+            list-style-type: none;
+            padding: 10px;
+            overflow: hidden;
+            margin: 20px;
+        }
+        nav ul li {
+            float: left;
+        }
+        nav ul li a {
+            display: block;
+            color: black;
+            text-align: left;
+            padding: 14px 16px;
+            text-decoration: none;
+        }
+        nav ul li a:hover {
+            background-color: gray;
+        }
+        h1, h2, p {
+            color: #333;
+            text-align: center;
+        }
+        picture img {
+            max-width: 50%;
+            height: 50%;
+            display: block;
+            margin: 0 auto;
+        }
+        main {
+            padding: 20px;
+        }
+        footer {
+            text-align: center;
+            padding: 10px;
+            background-color: #f1f1f1;
+            width: 100%;
+            bottom: 0;
+        }
+        footer p, footer address {
+            margin: 0;
+        }
+    </style>
+</head>
+<body>
+    <header>
+        <nav>
+            <ul>
+                <li><a href="media.html">TOP</a></li>
+                <li><a href="index.html">ALT SCHOOL AFRICA COURSES</a></li>
+            </ul>
+        </nav>
+    </header>
+    <main>
+        <h2>Media Page</h2>
+        <picture>
+            <source srcset="Alt-School Image assignment.jpg" media="(max-width: 480px)">
+            <source srcset="Alt-School Image assignment.jpg" media="(max-width: 768px)">
+            <source srcset="Alt-School Image assignment.jpg" media="(max-width: 1024px)">
+            <source srcset="Alt-School Image assignment.jpg" media="(min-width: 1025px)">
+            <img src="Alt-School Image assignment.jpg" alt="My Profile Picture">
+        </picture>
+        <h1>Hi! Ezeonuogu Victoria here.</h1>
+        <p>So sorry for this image! I couldn't find any of my images with a jpeg as everything kept saving in HEIC extension.</p>
+    </main>
+    <footer>
+        <p>&copy; 2024 Ezeonuogu Victoria</p>
+        <address>Plot 15. Nichemtex Estate</address>
+    </footer>
+</body>
+</html>
