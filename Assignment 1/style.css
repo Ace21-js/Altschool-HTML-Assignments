@@ -173,7 +173,7 @@ ul li {
       margin-bottom: 20px;
     }
     .content-right {
-      width: 100%;
+      width: 90%;
     }
     .side {
       position: relative;
@@ -200,8 +200,8 @@ ul li {
 
     .side {
       position: relative;
-      top: -80px;
-      left: 100px;
+      top: -90px;
+      left: 125px;
     }
 
     .header {
@@ -222,22 +222,6 @@ ul li {
     .form-item {
       margin-bottom: 20px;
       width: 70%;
-    }
-  }
-  
-  /* Media query for extra small mobile screens */
-  @media (max-width: 375px) {
-    .container {
-      margin-top: 20px;
-    }
-    .content-left img {
-      width: 100%;
-    }
-    .content-right {
-      padding: 10px;
-    }
-    .form-item input, .form-item select {
-      padding: 5px;
     }
   }
   
