@@ -188,29 +188,38 @@ ul li {
       flex-direction: column;
     }
     .content-left {
-      width: 100%;
+      width: 80%;
       margin-bottom: 20px;
     }
     .content-right {
-      width: 100%;
+      width: 80%;
+      height: 70vh;
     }
+    
     .side {
       position: relative;
-      top: 20px;
-      left: 0;
+      top: -50px;
+      left: 100px;
     }
+
     .header {
       position: relative;
       top: 0;
     }
+
     .header nav ul li {
       margin-top: 10px;
+      width: 50%;
     }
+
     .form-beside {
       flex-direction: column;
+      width: 70%
     }
+
     .form-item {
       margin-bottom: 20px;
+      width: 70%;
     }
   }
   
