@@ -1,166 +1,68 @@
-@font-face {
-    font-family: 'DMSans';
-    src: url('fonts/DM_Sans/DM_Sans/static/DMSans-Medium.ttf') format('truetype');
-    font-weight: medium;
-    font-style: normal;
-}
-
-@font-face {
-    font-family: 'DMSans';
-    src: url('fonts/DM_Sans/DM_Sans/static/DMSans-Bold.ttf') format('truetype');
-    font-weight: bold;
-    font-style: normal;
-}
-
-body {
-    font-family: 'DMSans', sans-serif;
-    background-color:linear-gradient(to right, #F2EBE6);
-}
-
-.header {
-    position: absolute;
-    top: 60px;
-    z-index: 10;
-}
-
-ul li {
-    list-style: none;
-    font-weight: medium;
-    border:3px solid black;
-    padding: 20px;
-    margin-left: 10px;
-    margin-top: -40px;
-}
-
-.header nav ul li a {
-    text-decoration: none;
-    color: black;
-}
-
-.header nav ul li a:hover {
-    text-decoration: underline; 
-    color: #0064C0; 
-}
-
-.container {
-    display: flex;
-    flex-direction: row;
-    justify-content: center;
-    margin-top: 100px;
-    margin-bottom:100px;
-    width: 100%;
-    height: 100%;
-}
-
-.content-left {
-    display: flex;
-    flex-direction: column;
-    justify-content: center;
-    background-repeat: no-repeat;
-    background-size: contain;
-    margin-left: 20px;
-    width:45%;
-}
-
-.content-left img {
-    opacity: 0.9; 
-    position: relative;
-    top: -90px; 
-    width: 80%;
-    text-align: center;
-    margin: 0 auto;
-}
-
-.content-left h1 {
-    position: relative;
-    top: -90px;
-    color: black;
-    text-align: center;
-}
-
-.content-right {
-    background-color:rgba(242, 235, 230, 0.9);
-    box-shadow: 0 0 10px rgba(0, 0, 0, 0.2);
-    width: 55%;
-    position: relative;
-    bottom: 100px;
-    left: 10px;
-    padding: 30px;
-    margin: 0;
-    height: 90vh;
-    font-weight: normal;
-}
-
-.form  {
-    margin-top: -10px;
-}
-
-
-.side {
-    position: absolute;
-    top: 50px;
-    left: 560px;
-    color: black;
-}
-
-.outer {
-    color:blue;
-}
-
-.form {
-    display: flex;
-    flex-direction: column;
-    justify-content: center;
-    border: 10px;
-}
-
-.form-beside {
-    display: flex;
-    flex-direction: row;
-    justify-content: space-between;
-    gap: 20px;
-    padding: 10px 10px;
-}
-
-.form-alone {
-    display: flex;
-    flex-direction: column;
-    padding: 10px 10px;
-}
-
-.form-item {
-    display: flex;
-    flex-direction: column;
-    flex: 1;
-}
-
-.form-item input, .form-item select {
-    padding: 10px;
-    border: 1px solid #ccc;
-    font-size: 16px;
-    font-weight: lighter;
-    box-sizing: border-box;
-    color: gray;
-}
-
-.form-alone input {
-    padding: 10px;
-    border: 1px solid #ccc;
-    font-size: 16px;
-    font-weight: lighter;
-    box-sizing: border-box;
-    color: gray;
-}
-
-.content-right p {
-    margin-top: -10px;
-    color: gray;
-}
-
-.bottom {
-    margin-top: -150px;
-    text-align: center;
-}
-
-
-
+/* Media query for tablet screens */
+@media (min-width: 576px) and (max-width: 767px) {
+    .container {
+      flex-direction: column;
+    }
+    .content-left {
+      width: 100%;
+      margin-bottom: 20px;
+    }
+    .content-right {
+      width: 100%;
+    }
+    .side {
+      position: relative;
+      top: 20px;
+      left: 0;
+    }
+  }
+  
+  /* Media query for mobile screens */
+  @media (max-width: 575px) {
+    .container {
+      flex-direction: column;
+    }
+    .content-left {
+      width: 100%;
+      margin-bottom: 20px;
+    }
+    .content-right {
+      width: 100%;
+    }
+    .side {
+      position: relative;
+      top: 20px;
+      left: 0;
+    }
+    .header {
+      position: relative;
+      top: 0;
+    }
+    .header nav ul li {
+      margin-top: 10px;
+    }
+    .form-beside {
+      flex-direction: column;
+    }
+    .form-item {
+      margin-bottom: 20px;
+    }
+  }
+  
+  /* Media query for extra small mobile screens */
+  @media (max-width: 375px) {
+    .container {
+      margin-top: 20px;
+    }
+    .content-left img {
+      width: 100%;
+    }
+    .content-right {
+      padding: 10px;
+    }
+    .form-item input, .form-item select {
+      padding: 5px;
+    }
+  }
+  
+  
