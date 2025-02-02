@@ -194,14 +194,14 @@ ul li {
     }
 
     .content-right {
-      width: 90%;
+      width: 80%;
       height: 100%;
     }
 
     .side {
       position: relative;
       top: -90px;
-      left: 125px;
+      left: 135px;
       font-size: smaller;
     }
 
