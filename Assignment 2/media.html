@@ -44,6 +44,19 @@
             display: block;
             margin: 0 auto;
         }
+
+        .audio-container {
+          display: flex;
+          justify-content: center;
+          margin: 30px;
+        }
+
+        .video-container {
+          display: flex;
+          justify-content: center;
+          margin: 30px;
+        }
+
         main {
             padding: 20px;
         }
@@ -108,14 +121,27 @@
     <main>
         <h2>Media Page</h2>
         <picture>
-            <source srcset="Alt-School Image assignment.jpg" media="(max-width: 480px)">
-            <source srcset="Alt-School Image assignment.jpg" media="(max-width: 768px)">
-            <source srcset="Alt-School Image assignment.jpg" media="(max-width: 1024px)">
-            <source srcset="Alt-School Image assignment.jpg" media="(min-width: 1025px)">
-            <img src="Alt-School Image assignment.jpg" alt="My Profile Picture">
+            <source src="assets/IMG_7959.jpg" media="(max-width: 480px)">
+            <source src="assets/IMG_7959.jpg" media="(max-width: 768px)">
+            <source src="assets/IMG_7959.jpg" media="(max-width: 1024px)">
+            <source src="assets/IMG_7959.jpg" media="(min-width: 1025px)">
+            <img src="assets/IMG_7959.jpg" alt="My Profile Picture">
         </picture>
+
+        <div class="audio-container">
+          <audio controls autoplay loop muted preload= "auto" crossorigin= "anonymous">
+            <source src="assets/Alt_school_6095.mp3" type= "audio/mpeg">
+          </audio>
+        </div>
+
+        <div class="video-container">
+          <video controls autoplay loop muted preload= "auto" crossorigin= "anonymous">
+            <source src="assets/IMG_7967.mp4" type="video/mp4">
+          </video>
+        </div>
+
         <h1>Hi! Ezeonuogu Victoria here.</h1>
-        <p>So sorry for this image! I couldn't find any of my images with a jpeg as everything kept saving in HEIC extension.</p>
+        <p>I love food.</p>
     </main>
     <footer>
         <p>&copy; 2024 Ezeonuogu Victoria</p>
