@@ -106,6 +106,11 @@
     height: auto;
   }
 
+  video-container video {
+    max-height: 200px; 
+    width: 100%;
+  }
+
   main {
     padding: 10px;
   }
@@ -127,22 +132,22 @@
     <main>
         <h2>Media Page</h2>
         <picture>
-            <source src="assets/IMG_7959.jpg" media="(max-width: 480px)">
-            <source src="assets/IMG_7959.jpg" media="(max-width: 768px)">
-            <source src="assets/IMG_7959.jpg" media="(max-width: 1024px)">
-            <source src="assets/IMG_7959.jpg" media="(min-width: 1025px)">
-            <img src="assets/IMG_7959.jpg" alt="My Profile Picture">
+            <source src="IMG_7959.jpg" media="(max-width: 480px)">
+            <source src="IMG_7959.jpg" media="(max-width: 768px)">
+            <source src="IMG_7959.jpg" media="(max-width: 1024px)">
+            <source src="IMG_7959.jpg" media="(min-width: 1025px)">
+            <img src="IMG_7959.jpg" alt="My Profile Picture">
         </picture>
 
         <div class="audio-container">
           <audio controls autoplay loop muted preload= "auto">
-            <source src="assets/Alt_school_6095.mp3" type= "audio/mpeg">
+            <source src="/Alt_school_6095.mp3" type= "audio/mpeg">
           </audio>
         </div>
 
         <div class="video-container">
           <video controls autoplay loop muted preload= "auto">
-            <source src="assets/IMG_7967.mp4" type="video/mp4">
+            <source src="/IMG_7967.mp4" type="video/mp4">
           </video>
         </div>
 
